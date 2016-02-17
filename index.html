@@ -10,6 +10,7 @@
     </title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/loadpage.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,7 +19,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body>
+  <body onload="loadDoc('content/home.html', loadPage)">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,18 +36,18 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="#">home<span class="sr-only">(current)</span></a>
+            <li class="active" onclick="loadDoc('content/home.html', loadPage)"> <!--loadPage('content/home.html')"-->
+              <a href="#" >home<span class="sr-only">(current)</span></a>
             </li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">images</a></li>
-            <li><a href="#">music</a></li>
+            <li onclick="loadDoc('content/about.html', loadPage)"><a href="#">about</a></li>
+            <li onclick="loadDoc('content/images.html', loadPage)"><a href="#">images</a></li>
+            <li onclick="loadDoc('content/music.html', loadPage)"><a href="#">music</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">projects<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">The Carl-Ender</a></li>
-                <li><a href="#">MovieDB</a></li>
-                <li><a href="#">CLTwitter</a></li>
+                <li onclick="loadDoc('content/thecarlender.html', loadPage)"><a href="#">The Carl-Ender</a></li>
+                <li onclick="loadDoc('content/moviedb.html', loadPage)"><a href="#">MovieDB</a></li>
+                <li onclick="loadDoc('content/cltwitter.html', loadPage)"><a href="#">CLTwitter</a></li>
               </ul>
             </li>
           </ul>
@@ -73,16 +74,8 @@
       </div><!-- /.container-fluid -->
     </nav>
     </div>
-    <div class="container-fluid">
-      <div class="page-header">
-          <h1>Stefan Reip <small>Homepage</small></h1>
-      </div>
-      <div class="row">
-        <div class="col-md-12">Das ist die neue Homepage von Stefan Reip. Endlich responsive dank Bootstrap</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">Under Construction. More to come!</div>
-      </div>
+    <div class="container-fluid" id="mainContent">
+      Loading . . .
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
