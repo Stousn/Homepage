@@ -1,2 +1,2 @@
 # Homepage
-My own homepage with bootstrap
+My own homepage
