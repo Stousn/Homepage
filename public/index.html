@@ -9,53 +9,20 @@
   <title>Stousn | Home</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/palette.css">
-  <style media="screen">
-		body {
-			font-family: Ubuntu, Roboto, Lucida Grande, Arial;
-      font-size: 16px;
-		}
-    header {
-      height: 20%;
-      min-height: 60px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
-    }
-		div[id=wrapper] {
-			max-width: 1024px;
-			margin: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-		}
-		div[id=headline] {
-			text-align: center;
-		}
-		section {
-			border-bottom: 1px;
-		}
-    h1 {
-      font-size: 24px;
-    }
-    h2 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-    hr {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-	</style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- For slick -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"  ></script>
+  <script src="bower_components/slick-carousel/slick/slick.js"  ></script>
+  <script src="bower_components/angular-slick/dist/slick.js"  ></script>
+  <!-- End for slick -->
+  <!-- For symbols -->
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
   </head>
-  <body class="primary-text-color body-bg-color">
+  <body class="primary-text-color body-bg-color" ng-app="Homepage">
 	<header class="default-primary-color text-primary-color">
 		<div id="headline">
 			<h1>Stousn - Home</h1>
@@ -65,6 +32,23 @@
 	<nav>
 	</nav>
 	<div id="wrapper">
+    <section>
+      <h2>Projekte</h2>
+      <slick infinite="true"  dots="true">
+        <div>
+          <h2>Projekt 1</h2>
+          <p>Das ist der Projektinhalt</p>
+        </div>
+        <div>
+          <h2>Projekt 2</h2>
+          <p>Das ist der Projektinhalt</p>
+        </div>
+        <div>
+          <h2>Projekt 3</h2>
+          <p>Das ist der Projektinhalt</p>
+        </div>
+      </slick>
+    </section>
 		<section>
 			<h2>Willkommen!</h2>
 			<p>
