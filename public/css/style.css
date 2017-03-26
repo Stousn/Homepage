@@ -183,3 +183,16 @@ li button::before{
   margin: auto;
   padding: 0;
 }
+
+.proj_todo {
+  background-image: url(../img/proj_todo.jpg);
+  color: white;
+}
+.proj_feinstaub {
+  background-image: url(../img/proj_feinstaub.jpg);
+  color: white;
+}
+.proj_bib {
+  background-image: url(../img/proj_bib.jpg);
+  color: white;
+}
