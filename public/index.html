@@ -9,63 +9,51 @@
   <title>Stousn | Home</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/palette.css">
-  <style media="screen">
-		body {
-			font-family: Ubuntu, Roboto, Lucida Grande, Arial;
-      font-size: 16px;
-		}
-    header {
-      height: 20%;
-      min-height: 60px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0px 3px 6px rgba(0,0,0,0.5);
-    }
-		div[id=wrapper] {
-			max-width: 1024px;
-			margin: auto;
-      padding-left: 20px;
-      padding-right: 20px;
-		}
-		div[id=headline] {
-			text-align: center;
-		}
-		section {
-			border-bottom: 1px;
-		}
-    h1 {
-      font-size: 24px;
-    }
-    h2 {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    h3 {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-    hr {
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-	</style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- For slick -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"  ></script>
+  <script src="bower_components/slick-carousel/slick/slick.js"  ></script>
+  <script src="bower_components/angular-slick/dist/slick.js"  ></script>
+  <!-- End for slick -->
+  <!-- For symbols -->
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
   </head>
-  <body class="primary-text-color body-bg-color">
-	<header class="default-primary-color text-primary-color">
-		<div id="headline">
+  <body class="primary-text-color body-bg-color" ng-app="Homepage">
+	<header class="w3-container w3-blue-grey w3-text-light-grey" >
+		<div>
 			<h1>Stousn - Home</h1>
 		</div>
-		<div id="Sandwich"></div>
+		<div id="hamburger"></div>
 	</header>
 	<nav>
 	</nav>
 	<div id="wrapper">
-		<section>
+    <section class="w3-container">
+      <h2>Projekte</h2>
+      <slick infinite="true"  dots="true">
+        <div class="proj_todo">
+          <h2>ToDo Liste</h2>
+          <p>Offline-Fähige angularJS <a href="http://sreip.bplaced.com/todo/" target="_blank">Todo Liste</a> (beta). <br>
+          Weiterentwicklung zu einer progressiven Web-App.</p>
+        </div>
+        <div class="proj_feinstaub">
+          <h2>Feinstaub Leoben</h2>
+          <p>Ist heute in Leoben ein Feinstaubtag? Ebenfalls noch beta.<br>
+          Anpassung der Feinstaub Graz App</p>
+        </div>
+        <div class="proj_bib">
+          <h2>demo-.bib-File</h2>
+          <p>Vorlage für BibLaTeX<br>
+          Damit zitieren mit LaTeX leichter läuft</p>
+        </div>
+      </slick>
+    </section>
+		<section class="w3-container">
 			<h2>Willkommen!</h2>
 			<p>
 				Hier ensteht in Kürze die neue Homepage von Stousn.
@@ -75,7 +63,7 @@
       <p><a href="https://stousn.at/beta">Work in progress</a></p>
 			<hr class="divider-color">
 		</section>
-	<footer>Kontakt: <a href="https://twitter.com/5tousn">@5tousn</a></footer>
+	<footer class="w3-container">Kontakt: <a href="https://twitter.com/5tousn">@5tousn</a></footer>
   </div>
   </body>
 </html>
