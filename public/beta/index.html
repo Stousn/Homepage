@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+  <meta charset="utf-8">
+	<meta name="description" content="Homepage von Stousn. Software Developer. Internettechniker.">
+	<meta name="keywords" content="Stousn, 5tousn, 5t0usn, IT@Kapfenberg, Internettechnik">
+	<meta name="author" content="Stefan Reip">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stousn | Home</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/palette.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- For slick -->
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"  ></script>
+  <script src="bower_components/slick-carousel/slick/slick.js"  ></script>
+  <script src="bower_components/angular-slick/dist/slick.js"  ></script>
+  <!-- End for slick -->
+  <!-- For symbols -->
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
+  </head>
+  <body class="primary-text-color body-bg-color" ng-app="Homepage">
+	<header class="w3-container w3-blue-grey w3-text-light-grey" >
+		<div>
+			<h1>Stousn - Home</h1>
+		</div>
+		<div id="hamburger"></div>
+	</header>
+	<nav>
+	</nav>
+	<div id="wrapper">
+    <section class="w3-container">
+      <h2>Projekte</h2>
+      <slick infinite="true"  dots="true">
+        <div class="proj_todo">
+          <h2>ToDo Liste</h2>
+          <p>Offline-Fähige angularJS <a href="http://sreip.bplaced.com/todo/" target="_blank">Todo Liste</a> (beta). <br>
+          Weiterentwicklung zu einer progressiven Web-App.</p>
+        </div>
+        <div class="proj_feinstaub">
+          <h2>Feinstaub Leoben</h2>
+          <p>Ist heute in Leoben ein Feinstaubtag? Ebenfalls noch beta.<br>
+          Anpassung der Feinstaub Graz App</p>
+        </div>
+        <div class="proj_bib">
+          <h2>demo-.bib-File</h2>
+          <p>Vorlage für BibLaTeX<br>
+          Damit zitieren mit LaTeX leichter läuft</p>
+        </div>
+      </slick>
+    </section>
+		<section class="w3-container">
+			<h2>Willkommen!</h2>
+			<p>
+				Hier ensteht in Kürze die neue Homepage von Stousn.
+				<br>
+				Stay tuned . . .
+			</p>
+      <p><a href="https://stousn.at/beta">Work in progress</a></p>
+			<hr class="divider-color">
+		</section>
+	<footer class="w3-container">Kontakt: <a href="https://twitter.com/5tousn">@5tousn</a></footer>
+  </div>
+  </body>
+</html>
