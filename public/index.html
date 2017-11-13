@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/palette.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
   <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <!-- For slick -->
@@ -23,16 +24,36 @@
 
   </head>
   <body class="primary-text-color body-bg-color" ng-app="Homepage">
-	<header class="default-primary-color text-primary-color">
-		<div id="headline">
+	<header class="w3-container w3-blue-grey w3-text-light-grey" >
+		<div>
 			<h1>Stousn - Home</h1>
 		</div>
-		<div id="Sandwich"></div>
+		<div id="hamburger"></div>
 	</header>
 	<nav>
 	</nav>
 	<div id="wrapper">
-		<section>
+    <section class="w3-container">
+      <h2>Projekte</h2>
+      <slick infinite="true"  dots="true">
+        <div class="proj_todo">
+          <h2>ToDo Liste</h2>
+          <p>Offline-Fähige angularJS <a href="http://sreip.bplaced.com/todo/" target="_blank">Todo Liste</a> (beta). <br>
+          Weiterentwicklung zu einer progressiven Web-App.</p>
+        </div>
+        <div class="proj_feinstaub">
+          <h2>Feinstaub Leoben</h2>
+          <p>Ist heute in Leoben ein Feinstaubtag? Ebenfalls noch beta.<br>
+          Anpassung der Feinstaub Graz App</p>
+        </div>
+        <div class="proj_bib">
+          <h2>demo-.bib-File</h2>
+          <p>Vorlage für BibLaTeX<br>
+          Damit zitieren mit LaTeX leichter läuft</p>
+        </div>
+      </slick>
+    </section>
+		<section class="w3-container">
 			<h2>Willkommen!</h2>
 			<p>
 				Hier ensteht in Kürze die neue Homepage von Stousn.
@@ -42,7 +63,7 @@
       <p><a href="https://stousn.at/beta">Work in progress</a></p>
 			<hr class="divider-color">
 		</section>
-	<footer>Kontakt: <a href="https://twitter.com/5tousn">@5tousn</a></footer>
+	<footer class="w3-container">Kontakt: <a href="https://twitter.com/5tousn">@5tousn</a></footer>
   </div>
   </body>
 </html>
