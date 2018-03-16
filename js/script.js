@@ -1,5 +1,5 @@
 function w3_open() {
-  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.width = "250px";
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("openNav").style.display = 'none';
 }
