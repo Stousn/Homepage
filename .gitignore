@@ -47,3 +47,5 @@ firebase.json
 
 # Shell Scrips
 *.sh
+
+package-lock.json
