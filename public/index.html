@@ -2,15 +2,17 @@
 <html>
   <title>Stousn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet"
-    href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    href="css/w3-theme-blue-grey.css">
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    href="css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-  <link rel="manifest" href="assets/icon/site.webmanifest">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <script src="js/script.js" defer></script>
+  <script src="js/domain.js" defer></script>
   <body class="w3-theme-l4">
     <div class="w3-sidebar w3-bar-block w3-card w3-animate-left"
     style="display:none" id="mySidebar">
@@ -22,11 +24,14 @@
         onclick="loadContent('home.html', 'Business Card')">Business Card</a>
       <a href="#" class="w3-bar-item w3-button"
         onclick="loadContent('imprint.html', 'Imprint')">Imprint</a>
-      <a href="https://ergotherapie-bankler.at" class="w3-bar-item w3-button w3-amber">
-        Ergo Bankler
+      <a href="http://blog.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
+        Blog
       </a>
       <a href="https://stousn.dev" class="w3-bar-item w3-button w3-theme-d4">
         Stousn DEV
+      </a>
+      <a href="https://ergotherapie-bankler.at" target="_blank" class="w3-bar-item w3-button w3-amber">
+        Ergo Bankler
       </a>
     </div>
     <div class="w3-bar w3-large w3-theme-d3">
@@ -41,7 +46,5 @@
     <div id="content" class="w3-container w3-content"
       w3-include-html="content/home.html">
     </div>
-    <script src="js/script.js" async defer></script>
-    <script src="js/domain.js" async defer></script>
   </body>
 </html>
