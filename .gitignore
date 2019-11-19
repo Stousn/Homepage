@@ -43,7 +43,6 @@ node_modules
 # Firebase
 .firebaserc
 database.rules.json
-firebase.json
 
 # Shell Scrips
 *.sh
