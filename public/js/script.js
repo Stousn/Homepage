@@ -10,8 +10,22 @@ function setNames() {
   for (var i = 0; i < names.length; i++) {
     names[i].innerText = document.title
   }
+  var devurls = document.getElementsByTagName('devurl')
+  for (var i = 0; i < devurls.length; i++) {
+    var domain = document.title.toLocaleLowerCase().replace(/\s/g, '');
+    devurls[i].innerHTML = '<a href="https://' + domain + '.dev" target="_blank">' + domain + '.dev</a>'
+  }
 }
-function includeHTML() {
+function scrollToElement(name) {
+  if (name) {
+    var element = document.getElementById(name.toLowerCase())
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+  
+}
+function includeHTML(name) {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName('*')
@@ -30,6 +44,7 @@ function includeHTML() {
           elmnt.removeAttribute('w3-include-html')
           includeHTML()
           setNames()
+          scrollToElement(name)
         }
       }
       xhttp.open('GET', file, true)
@@ -43,7 +58,7 @@ includeHTML()
 
 function loadContent(page, name) {
   document.getElementById('content').setAttribute('w3-include-html', 'content/' + page)
-  includeHTML()
+  includeHTML(name)
   document.getElementById('pagename').innerHTML = name
   w3_close()
 }
