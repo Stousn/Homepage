@@ -20,7 +20,7 @@ function scrollToElement(name) {
   if (name) {
     let element = document.getElementById(name.toLowerCase())
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
   
