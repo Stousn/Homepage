@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <title>Stousn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet"
-    href="css/w3-theme-blue-grey.css">
-  <link rel="stylesheet"
-    href="css/font-awesome.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-  <link rel="manifest" href="assets/site.webmanifest">
-  <script src="js/script.js" defer></script>
-  <script src="js/domain.js" defer></script>
-  <body class="w3-theme-l4">
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left"
-    style="display:none" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-large w3-theme-d4"
-        onclick="w3_close()">
-        Close &times;
-      </button>
-      <a class="w3-bar-item w3-button"
-        onclick="loadContent('home.html', 'Home')">Home</a>
-      <a class="w3-bar-item w3-button"
-        onclick="loadContent('imprint.html', 'Imprint');">Imprint</a>
-      <a class="w3-bar-item w3-button"
-          onclick="loadContent('imprint.html', 'Disclaimer');">Disclaimer</a>
-      <a class="w3-bar-item w3-button"
-            onclick="loadContent('imprint.html', 'Privacy');">Privacy</a>
-      <!--<a href="http://blog.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
+<html lang="en">
+    <head>
+        <title>Stousn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/w3.css" />
+        <link rel="stylesheet" href="css/w3-theme-blue-grey.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+        <link rel="manifest" href="assets/site.webmanifest" />
+        <script src="js/script.js" defer></script>
+        <script src="js/domain.js" defer></script>
+    </head>
+    <body class="w3-theme-l4">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-theme-d4" onclick="w3_close()">Close &times;</button>
+            <a class="w3-bar-item w3-button" onclick="loadContent('home.html', 'Home')">Home</a>
+            <a class="w3-bar-item w3-button" onclick="loadContent('about.html', 'About')">About</a>
+            <a class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Imprint');">Imprint</a>
+            <a class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Disclaimer');">Disclaimer</a>
+            <a class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Privacy');">Privacy</a>
+            <!--<a href="http://blog.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
         Blog
       </a>-->
-      <devlink></devlink>
-      <a href="http://twitter.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
-        Twitter
-      </a>
-      <a href="http://instagram.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
-        Instagram
-      </a>
-      <a href="http://github.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
-        GitHub
-      </a>
-      <a href="https://ergotherapie-bankler.at" target="_blank" class="w3-bar-item w3-button w3-cyan">
-        Ergo Bankler
-      </a>
-    </div>
-    <div class="w3-bar w3-large w3-theme-d3">
-      <a href="#" class="w3-bar-item w3-button" onclick="w3_open()"
-        id="openNav">
-        <i class="fa fa-bars"></i>
-      </a>
-      <span id="sitename" class="w3-bar-item">stousn.at</span>
-      <!-- <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a> -->
-      <span id="pagename" class="w3-bar-item w3-right">Home</span>
-    </div>
-    <div id="content" class="w3-container w3-content"
-      w3-include-html="content/home.html">
-    </div>
-  </body>
+            <devlink></devlink>
+            <a href="http://twitter.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4"> Twitter </a>
+            <a href="http://instagram.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4"> Instagram </a>
+            <a href="http://github.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4"> GitHub </a>
+            <a href="https://ergotherapie-bankler.at" target="_blank" class="w3-bar-item w3-button w3-cyan"> Ergo Bankler </a>
+        </div>
+        <div class="w3-bar w3-large w3-theme-d3">
+            <a href="#" class="w3-bar-item w3-button" onclick="w3_open()" id="openNav">
+                <i class="fa fa-bars"></i>
+            </a>
+            <span id="sitename" class="w3-bar-item">stousn.at</span>
+            <!-- <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a> -->
+            <span id="pagename" class="w3-bar-item w3-right">Home</span>
+        </div>
+        <div id="content" class="w3-container w3-content" w3-include-html="content/home.html"></div>
+    </body>
 </html>

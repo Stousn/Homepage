@@ -1,11 +1,11 @@
-var STOUSN = "stousn";
+const STOUSN = "stousn";
 
-var STEFANREIP = "stefanreip";
+const STEFANREIP = "stefanreip";
 
-var DEV = "dev"
+const DEV = "dev"
 
 function startUp() {
-  var domain = detectDomain();
+  let domain = detectDomain();
 
   setTitle(domain);
   setDevLink(domain);

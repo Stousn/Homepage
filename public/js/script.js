@@ -6,19 +6,19 @@ function w3_close() {
   document.getElementById('mySidebar').style.display = 'none'
 }
 function setNames() {
-  var names = document.getElementsByTagName('name')
-  for (var i = 0; i < names.length; i++) {
-    names[i].innerText = document.title
+  let names = document.getElementsByTagName('name')
+  for (const element of names) {
+    element.innerText = document.title
   }
-  var devurls = document.getElementsByTagName('devurl')
-  for (var i = 0; i < devurls.length; i++) {
-    var domain = document.title.toLocaleLowerCase().replace(/\s/g, '');
-    devurls[i].innerHTML = '<a href="https://' + domain + '.dev" target="_blank">' + domain + '.dev</a>'
+  let devurls = document.getElementsByTagName('devurl')
+  for (const element of devurls) {
+    let domain = document.title.toLocaleLowerCase().replace(/\s/g, '');
+    element.innerHTML = '<a href="https://' + domain + '.dev" target="_blank">' + domain + '.dev</a>'
   }
 }
 function scrollToElement(name) {
   if (name) {
-    var element = document.getElementById(name.toLowerCase())
+    let element = document.getElementById(name.toLowerCase())
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
@@ -26,7 +26,7 @@ function scrollToElement(name) {
   
 }
 function includeHTML(name) {
-  var z, i, elmnt, file, xhttp;
+  let z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName('*')
   for (i = 0; i < z.length; i++) {
