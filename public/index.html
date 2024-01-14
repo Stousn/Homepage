@@ -15,7 +15,8 @@
         <script src="js/domain.js" defer></script>
     </head>
     <body class="w3-theme-d4 w3-theme-dark w3-animate-opacity">
-        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-theme-d3" style="display:none" id="mySidebar">
+        <div id="overlay" onclick="w3_close()" style="display:none"></div>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-theme-d3" style="display:none; z-index:3" id="mySidebar">
             <button class="w3-bar-item w3-button w3-large w3-theme-d4" onclick="w3_close()">Close &times;</button>
             <a class="w3-bar-item w3-button" onclick="loadContent('home.html', 'Home')">Home</a>
             <a class="w3-bar-item w3-button" onclick="loadContent('about.html', 'About')">About</a>
@@ -29,7 +30,7 @@
             <a href="http://github.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4"> GitHub </a>
             <a href="https://ergotherapie-reip.at" target="_blank" class="w3-bar-item w3-button w3-cyan"> Ergo Reip </a>
         </div>
-        <div class="w3-bar w3-top w3-large w3-theme-d3">
+        <div class="w3-bar w3-top w3-large w3-theme-d3" style="z-index:3">
             <a class="w3-bar-item w3-button" onclick="w3_open()" id="openNav">
                 <i class="fa fa-bars"></i>
             </a>
