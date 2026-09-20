@@ -12,6 +12,16 @@ function setNames() {
   for (const element of names) {
     element.innerText = document.title
   }
+
+  if (document.title === 'Stousn') {
+    document.getElementById('header-stefanreip').style.display="none";
+    document.getElementById('sitename').style.display="none";
+  } else {
+    document.getElementById('header-stousn').style.display="none";
+    document.getElementById('sitelogo').style.display="none";
+  }
+
+
   let devurls = document.getElementsByTagName('devurl')
   for (const element of devurls) {
     let domain = document.title.toLocaleLowerCase().replace(/\s/g, '');
