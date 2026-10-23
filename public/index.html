@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/w3.css" />
         <link rel="stylesheet" href="css/w3-theme-blue-grey.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/my.css" />
         <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
         <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -17,21 +18,22 @@
     </head>
     <body class="w3-theme-d4 w3-theme-dark w3-animate-opacity">
         <div id="overlay" onclick="w3_close()" style="display:none"></div>
-        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-theme-d3" style="display:none; z-index:3" id="mySidebar">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-theme-d3 my-shadow" style="display:none; z-index:3" id="mySidebar">
             <button class="w3-bar-item w3-button w3-large w3-theme-d4" onclick="w3_close()">Close &times;</button>
             <a class="w3-bar-item w3-button" onclick="loadContent('home.html', 'Home')">Home</a>
-            <a class="w3-bar-item w3-button" onclick="loadContent('about.html', 'About')">About</a>
+            <!-- <a class="w3-bar-item w3-button" onclick="loadContent('about.html', 'About')">About</a> -->
             <a class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Imprint');">Imprint</a>
             <a class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Disclaimer');">Disclaimer</a>
-            <a class="w3-bar-item w3-button" onclick="loadContent('imprint.html', 'Privacy');">Privacy</a>
+            <a class="w3-bar-item w3-button " onclick="loadContent('imprint.html', 'Privacy');">Privacy</a>
             <!--<a href="http://blog.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4">
         Blog
       </a>-->
             <devlink></devlink>
-            <a href="http://github.stousn.at" target="_blank" class="w3-bar-item w3-button w3-theme-d4"> GitHub </a>
-            <a href="https://ergotherapie-reip.at" target="_blank" class="w3-bar-item w3-button w3-cyan"> Ergo Reip </a>
+            <a href="http://github.stousn.at" target="_blank" class="w3-bar-item w3-button"> GitHub </a>
+            <a href="https://Binnenlandpiraten.at" target="_blank" class="w3-bar-item w3-button"> Binnenlandpiraten </a>
+            <a href="https://ergotherapie-reip.at" target="_blank" class="w3-bar-item w3-button"> Ergotherapie Reip </a>
         </div>
-        <div class="w3-bar w3-top w3-large w3-theme-d3" style="z-index:3">
+        <div class="w3-bar w3-top w3-large w3-theme-d3 my-shadow" style="z-index:3">
             <a class="w3-bar-item w3-button" onclick="w3_open()" id="openNav">
                 <i class="fa fa-bars"></i>
             </a>
@@ -43,5 +45,14 @@
             <span id="pagename" class="w3-bar-item w3-right">Home</span>
         </div>
         <div id="content" class="w3-container w3-content" style="margin-top: 43px;" w3-include-html="content/home.html"></div>
+        <div id="footer" class="my-footer">
+            <div class="w3-row w3-row-padding" style="grid-template-columns:1fr 2fr">
+                <div class="w3-half">&nbsp;
+                    <!-- <small>&copy; <span id="copy">Stousn</span></small> -->
+                </div>
+                <div class="w3-half"><small>🫶🏻 Human Made</small></div>
+            </div>
+        </div>
+  
     </body>
 </html>

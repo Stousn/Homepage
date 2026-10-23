@@ -1,0 +1,53 @@
+.my-button {
+    background: linear-gradient(#435761, #303e45) !important;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 #ffffff59,
+        inset 0 -2px 0 #0003,
+        0 1px 2px #0006,
+        0 8px 24px -6px #303e4599
+}
+
+.my-button:active {
+    background: linear-gradient(#57707d, #435761) !important;
+    translate: 0 1px;
+    box-shadow: inset 0 2px 4px #0004;
+}
+.my-button:hover {
+    background: linear-gradient(#57707d, #435761) !important;
+    translate: 0 1px;
+}
+
+.my-shadow {
+    background: linear-gradient(#435761, #303e45) !important;
+    box-shadow: inset 0 1px 0 #ffffff59,
+        inset 0 -2px 0 #0003,
+        0 1px 2px #0006,
+        0 8px 24px -6px #303e4599
+}
+
+.my-panel {
+    background: linear-gradient(#435761, #303e45) !important;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 #ffffff59,
+        inset 0 -2px 0 #0003,
+        0 1px 2px #0006,
+        0 8px 24px -6px #303e4599
+}
+
+.my-footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: #888;
+   /*background: linear-gradient(#435761, #303e45) !important;
+    box-shadow: inset 0 1px 0 #ffffff59,
+        inset 0 -2px 0 #0003,
+        0 1px 2px #0006,
+        0 8px 24px -6px #303e4599;*/
+   text-align: center;
+
+}
